@@ -116,3 +116,10 @@ form {
 .mt-3 a:hover {
     text-decoration: underline;
 }
+
+.modal-content {
+    background-color: rgba(217, 83, 79, 0.897); 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 1px 1px #000000;
+}
