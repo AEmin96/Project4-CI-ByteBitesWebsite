@@ -43,7 +43,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="signup-modal-label">Sign Up Error</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" id="xbutton" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -51,7 +51,7 @@
                         <!-- Error message will be displayed here -->
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" href="signup.html">Close</button>
                     </div>
                 </div>
             </div>
@@ -106,18 +106,32 @@
                 return;
             }
     
-        
-            alert("Sign up successful!");
-          
+            // Show the success modal when sign up is successful
+            $('#success-modal').modal('show');
+    
+            // You can submit the form or perform other actions here
         });
     
-        
+        // Function to display a custom error message in the error modal
         function displayError(errorMessage) {
             var modalBody = document.querySelector(".modal-body");
             modalBody.textContent = errorMessage;
     
-            $('#signup-modal').modal('show'); 
+            $('#signup-modal').modal('show'); // Show the error modal
+    
+            // Close the error modal when the "Close" button is clicked
+            document.querySelector(".modal-footer .btn-secondary").addEventListener("click", function() {
+                $('#signup-modal').modal('hide');
+            });
+
+            // Close the error modal when the "X" button is clicked
+            document.querySelector("#xbutton").addEventListener("click", function() {
+                $('#signup-modal').modal('hide');
+            });
+
         }
+    
+        ;
     </script>
     
 </body>
