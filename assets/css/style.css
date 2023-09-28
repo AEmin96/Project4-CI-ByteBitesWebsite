@@ -1,0 +1,23 @@
+body {
+    background-image: url('assets/images/background.jpg'); /* Updated image path */
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+.navbar {
+    padding: 20px 0;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+.restaurant-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    color: #d9534f;
+}
+.main-content {
+    text-align: center;
+    padding: 50px 0;
+}
