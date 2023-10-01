@@ -43,7 +43,7 @@
                 <div class="modal-content-fail">
                     <div class="modal-header">
                         <h5 class="modal-title" id="signup-modal-label">Sign Up Error</h5>
-                        <button type="button" id="xbutton" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" id="xbutton" class="close" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -51,7 +51,7 @@
                         <!-- Error message will be displayed here -->
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal" href="signup.html">Close</button>
+                        <button type="button" class="btn btn-secondary">Close</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                         Congratulations! You have successfully registered.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="redirectToLogin()">Log In Now</button>
+                        <button type="button" class="btn btn-primary" onclick="redirectToLogin()">Log In Now</button>
                     </div>
                 </div>
             </div>
@@ -139,22 +139,8 @@
         modalBody.textContent = errorMessage;
 
         $('#signup-modal').modal('show'); 
-
-        // Close the error modal when the "Close" button is clicked
-        document.querySelector(".modal-footer .btn-secondary").addEventListener("click", function() {
-            $('#signup-modal').modal('hide');
-        });
-
-        // Close the error modal when the "X" button is clicked
-        document.querySelector("#xbutton").addEventListener("click", function() {
-            $('#signup-modal').modal('hide');
-        });
-    }
-
-    // Function to redirect to the login page
-    function redirectToLogin() {
-        window.location.href = "custlogin.html";
-    }
+        }
+  
 </script>
     
 </body>
