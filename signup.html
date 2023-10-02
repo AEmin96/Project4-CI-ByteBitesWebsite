@@ -43,7 +43,7 @@
                 <div class="modal-content-fail">
                     <div class="modal-header">
                         <h5 class="modal-title" id="signup-modal-label">Sign Up Error</h5>
-                        <button type="button" id="xbutton" class="close" aria-label="Close">
+                        <button type="button" id="xbutton" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -51,7 +51,7 @@
                         <!-- Error message will be displayed here -->
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary">Close</button>
+                        <button type="button" id="closebutton"  data-dismiss="modal" class="btn btn-secondary">Close</button>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <div class="modal-content-succ">
                     <div class="modal-header">
                         <h5 class="modal-title" id="success-modal-label">Registration Successful</h5>
-                        <button type="button" class="close" id="xbutton" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" id="xbutton" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -70,7 +70,7 @@
                         Congratulations! You have successfully registered.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" onclick="redirectToLogin()">Log In Now</button>
+                        <button type="button" id="loginnowbtn" class="btn btn-primary">Log In Now</button>
                     </div>
                 </div>
             </div>
@@ -128,19 +128,38 @@
         }
 
         // Show the success modal when sign up is successful
-        $('#success-modal').modal('show');
-
-        // You can submit the form or perform other actions here
+        $('#success-modal').modal({
+        backdrop: 'static',
+        keyboard: false
+        }).modal('show');
     });
 
-    // Function to display a custom error message in the error modal
-    function displayError(errorMessage) {
+       // Function to display a custom error message in the error modal
+        function displayError(errorMessage) {
         var modalBody = document.querySelector(".modal-body");
         modalBody.textContent = errorMessage;
 
-        $('#signup-modal').modal('show'); 
+        $('#signup-modal').modal({
+        backdrop: 'static',
+        keyboard: false
+        }).modal('show');
         }
   
+  // Close the error modal when the "Close" button is clicked
+        document.querySelector(".modal-footer .btn-secondary").addEventListener("click", function() {
+            $('#signup-modal').modal('hide');
+        });
+
+        // Close the error modal when the "X" button is clicked
+        document.querySelector("#xbutton").addEventListener("click", function() {
+            $('#signup-modal').modal('hide');
+        });
+
+        // Function to redirect to the login page
+        function redirectToLogin() {
+        window.location.href = "custlogin.html";
+    }
+
 </script>
     
 </body>
