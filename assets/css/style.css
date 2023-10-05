@@ -117,15 +117,15 @@ form {
     text-decoration: underline;
 }
 
-.modal-content-fail {
-    background-color: rgba(217, 83, 79, 0.897); 
+#success-modal .modal-content {
+    background-color: rgba(88, 238, 113, 0.897);
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-shadow: 1px 1px #000000;
 }
 
-.modal-content-succ {
-    background-color: rgba(88, 238, 113, 0.897); 
+#signup-modal .modal-content {
+background-color: rgba(217, 83, 79, 0.897);
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-shadow: 1px 1px #000000;
