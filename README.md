@@ -1,8 +1,9 @@
 <h1>Project Name: ByteBites Restaurant</h1>
 <h2> Flowchart for the project </h2>
 
+![Flowchart](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/3879ef1a-a6dc-4845-b956-12fc484d303c)
 
-![Flowcharts](https://github.com/AEmin96/Project4-CI-ByteBites/assets/126208272/28cfd6fa-76ce-47e1-b699-f5f690e43adf)
+
 
 <h2>1. Purpose of the Project</h2>
 <p>The purpose of this project is to create an efficient and user-friendly restaurant website that enhances the dining experience for customers. It aims to provide a platform for users to easily make reservations, explore the menu, and order online while allowing restaurant staff to efficiently manage bookings and menu items. Ultimately, the project seeks to streamline restaurant operations and improve customer engagement.</p>
