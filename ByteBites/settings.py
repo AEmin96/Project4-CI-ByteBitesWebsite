@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bytebites.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://bytebites-c7354208ea8f.herokuapp.com/', 'localhost']
 
 
 # Application definition
