@@ -9,10 +9,12 @@ def book(request):
         date = request.POST.get('date') 
         email = request.POST.get('email')
         password = request.POST.get('password')
-#            new_user = User.objects.create_user(email=form.email, password=form.password)
-#            new_user.save()
-        return redirect('booking_success')
+        new_user = User.objects.create_user(username=email.split('@')[0], email=email, password=password)
+        new_user.save()
+        new_book = Booking(date = date, user = new_user)
+        new_book.save()
+        return render(request, 'booking_success.html')
     else:
-        form = BookingForm()
+        print('Error')
 
-    return render(request, 'book.html', {'form': form})
+    return render(request, 'book.html')
