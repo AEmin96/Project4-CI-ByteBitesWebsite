@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteBites</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 </head>
 <body>
     <div class="banner">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container">
-                <a class="navbar-brand restaurant-name" href="index.html">ByteBites</a>
+                <a class="navbar-brand restaurant-name" href="{% url 'home' %}">ByteBites</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,17 +21,18 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="{% url 'home' %}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
+                            <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-active" href="book.html">Book</a>
+                            <a class="nav-link nav-active" class="nav-link" href="{% url 'book' %}">Book</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="custlogin.html">Customer Login</a>
+                            <a class="nav-link" href="{% url 'llogin' %}">Customer Login</a>
                         </li>
+                      
                     </ul>
                 </div>
             </div>
@@ -39,8 +41,38 @@
 
     <div class="container main-content">
         <div class="main-content-banner">
-            <h1>Welcome to ByteBites</h1>
-            <p>Discover our delicious menu and book a table for an unforgettable dining experience.</p>
+            <div class="booking-section">
+                <h2>Book a Table</h2>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="date">Select a Date:</label> <br>
+                        <input type="date" id="date" name="date" min="2023-10-17" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label> <br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-email">Confirm Email:</label> <br>
+                        <input type="email" id="confirm-email" name="confirm-email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label> <br>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Create an account & Book</button>
+                </form>
+            </div>
+        </div>
         </div>
     </div>
 
