@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
-from members.views import index, menu, llogin
+from members.views import index, menu, llogin, logout
 
 
 urlpatterns = [
@@ -25,4 +25,5 @@ urlpatterns = [
     path('menu/', TemplateView.as_view(template_name="menu.html"), name='menu'),
     path('', include('bookings.urls')),
     path('llogin/', TemplateView.as_view(template_name="llogin.html"), name='llogin'),
+    path('', include('django.contrib.auth.urls')),
 ]

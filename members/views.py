@@ -1,14 +1,17 @@
 from django.shortcuts import render
-
+from django.contrib.auth import logout
 # Create your views here.
 def index(request):
     return render(request, 'base.html')
 
 def menu(request):
-    return render(requst, 'menu.html')
+    return render(request, 'menu.html')
 
 def book(request):
-    return render(requst, 'book.html')
+    return render(request, 'book.html')
 
 def llogin(request):
-    return render(requst, 'llogin.html')
+    return render(request, 'llogin.html')
+
+def logout(request):
+    return render(request, 'book.html')
