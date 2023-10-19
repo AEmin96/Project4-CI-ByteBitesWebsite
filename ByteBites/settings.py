@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bytebites-c7354208ea8f.herokuapp.com', 'localhost', '8000-aemin96-project4-ci-byte-14zza0k5ei.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['bytebites-c7354208ea8f.herokuapp.com', 'localhost', '8000-aemin96-project4-ci-byte-8pxfp8pwws.us2.codeanyapp.com']
 
 
 # Application definition
@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'ByteBites.wsgi.application'
 
     
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
