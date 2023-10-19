@@ -49,8 +49,8 @@
 
     <div class="container main-content">
         <div class="main-content-banner">
-            <form>
-               
+            <form method="post" action="{% url 'llogin' %}">
+                {% csrf_token %}
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter email" required>
@@ -61,10 +61,28 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Sign In</button>
             </form>
-           
+            <div id="error-message" class="alert alert-danger mt-3" style="display: none;">
+                <button type="button" class="close" onclick="dismissError()">&times;</button>
+                <span id="error-text"></span>
+            </div>
         </div>
     </div>
-
+    <script>
+        function dismissError() {
+            document.getElementById("error-message").style.display = "none";
+        }
+    
+        // Check for any error messages sent from the server
+        const errorText = document.getElementById("error-text");
+        const errorContainer = document.getElementById("error-message");
+    
+        // If there is an error message, display it
+        const errorMessage = "{{ error_message }}";
+        if (errorMessage) {
+            errorText.textContent = errorMessage;
+            errorContainer.style.display = "block";
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
