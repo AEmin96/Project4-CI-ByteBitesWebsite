@@ -43,9 +43,8 @@
         <div class="main-content-banner">
             <div class="booking-section">
                 <h2>Book a Table</h2>
-                <form id="booking-form" method="post" >
+                <form id="booking-form" method="post" action="{% url 'book' %}">
                     {% csrf_token %}
-                    {{ form.as_p }}
                     <div class="form-group">
                         <label for="date">Select a Date:</label> <br>
                         <input type="date" id="date" name="date" min="2023-10-17" required>
