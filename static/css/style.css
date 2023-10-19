@@ -46,14 +46,14 @@ body {
 }
 
 .navbar-brand.restaurant-name {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', sans-serif;
     font-size: 36px;
     font-weight: bold;
     color: #d9534f;
 }
 
 .main-content {
-    font-family: 'Segue', cursive;
+    font-family: 'Segue', sans-serif;
     font-size: 36px;
     font-weight: bold;
     color: #ffffff;
