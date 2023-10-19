@@ -17,7 +17,7 @@ def llogin(request):
 def logout(request):
     return render(request, 'book.html')
 
-def login_view(request):
+def llogin(request):
     if request.method == 'POST':
         email = request.POST['email']
         password = request.POST['password']
