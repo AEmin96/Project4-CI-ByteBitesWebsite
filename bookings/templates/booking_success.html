@@ -27,7 +27,7 @@
                             <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> My Bookings</a>
+                            <a class="nav-link" href="{% url 'mybookings' %}"> My Bookings</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"> Log Out </a>
@@ -43,7 +43,9 @@
         <div class="main-content-banner">
             <div class="booking-section">
                 <h1>Booking Successful!</h1>
-                <p>Your table has been booked for {{ object.date }}</p>
+                <p>View & Manage your booking here 
+                <a href="{% url 'mybookings' %}" class="btn btn-danger btn-lg"> My Bookings </a>
+                </p>
             </div>
         </div>
         </div>

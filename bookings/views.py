@@ -18,3 +18,6 @@ def book(request):
         print('Error')
 
     return render(request, 'book.html')
+
+def mybookings(request):
+    return render(request, 'mybookings.html')
