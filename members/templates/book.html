@@ -75,7 +75,35 @@
         </div>
         </div>
     </div>
-
+    <script>
+        // Get a reference to the date input field
+        var dateInput = document.getElementById('date');
+    
+        // Get today's date in the format 'YYYY-MM-DD'
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; // January is 0
+        var yyyy = today.getFullYear();
+    
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+    
+        today = yyyy + '-' + mm + '-' + dd;
+    
+        // Set the min attribute of the date input to today
+        dateInput.setAttribute('min', today);
+    
+        // Add an event listener to update the min attribute if the user manually enters a date
+        dateInput.addEventListener('input', function () {
+            if (dateInput.value < today) {
+                dateInput.value = today;
+            }
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
