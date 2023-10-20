@@ -182,12 +182,7 @@ background-color: rgba(217, 83, 79, 0.897);
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin-left: 45%;
-    width: auto;
-    max-width: 400px;
-    height: auto;
-    max-height: 300px;
-  }
+}
   
   /* Style for individual messages */
   .messages li {
