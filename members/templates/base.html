@@ -53,9 +53,9 @@
             {% if user.is_authenticated %}
             <h1>Welcome to ByteBites</h1>
             <p>Check and manage your bookings here : .</p>
-            <a href="{% url 'mybookings' %}" class="btn btn-danger btn-lg">My Bookings</a>
+            <a href="{% url 'mybookings' %}" class="btn btn-danger btn-lg">My Bookings:</a>
             {% else %}
-            h1>Welcome to ByteBites</h1>
+            <h1>Welcome to ByteBites</h1>
             <p>Discover our delicious menu and book a table for an unforgettable dining experience.</p>
             <a href="{% url 'book' %}" class="btn btn-danger btn-lg">BOOK NOW</a>
             {% endif %}
