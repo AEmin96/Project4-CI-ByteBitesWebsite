@@ -23,9 +23,9 @@ def llogin(request):
             return redirect('home')
     if request.method == 'POST':
         User = get_user_model()
-        email = request.POST['email'].lower()
+        email = request.POST.get('email', '').lower()
         user = User.objects.filter(email=email).first()
-        password = request.POST['password']
+        password = request.POST.get('password', '')
         if user and user.check_password(password):
             login(request, user)
             return redirect('home')
