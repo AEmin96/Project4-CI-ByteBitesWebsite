@@ -11,9 +11,6 @@ def menu(request):
 def book(request):
     return render(request, 'book.html')
 
-def llogin(request):
-    return render(request, 'llogin.html')
-
 def logout(request):
     return render(request, 'book.html')
 
