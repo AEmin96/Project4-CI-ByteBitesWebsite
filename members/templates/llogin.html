@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 </head>
 <body>
-    <div >
+    <div class="banner">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container">
                 <a class="navbar-brand restaurant-name" href="{% url 'home' %}">ByteBites</a>
@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}">Home <a>
+                            <a class="nav-link" href="{% url 'home' %}">Home </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'menu' %}">Menu</a>
@@ -67,7 +67,22 @@
             </div>
         </div>
     </div>
-
+    <script>
+            function dismissError() {
+                 document.getElementById("error-message").style.display = "none";
+            }
+          
+              // Check for any error messages sent from the server
+             const errorText = document.getElementById("error-text");
+             const errorContainer = document.getElementById("error-message");
+          
+              // If there is an error message, display it
+             const errorMessage = "{{ error_message }}";
+             if (errorMessage) {
+               errorText.textContent = errorMessage;
+                 errorContainer.style.display = "block";
+              }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
