@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import  authenticate, login, logout
 from django.http import JsonResponse
 # Create your views here.
@@ -22,7 +22,7 @@ def llogin(request):
 
         if user is not None:
             login(request, user)
-            return render(request, 'base.html')  
+            return redirect('home')  
         else:
             error_message = "Invalid email or password. Please try again."
             if request.is_ajax():
