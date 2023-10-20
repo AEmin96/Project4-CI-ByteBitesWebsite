@@ -46,9 +46,19 @@
             </div>
         </nav>
     </div>
-
+    
     <div class="container main-content">
         <div class="main-content-banner">
+            {% if messages %}
+            <ul class="messages">
+            {% for message in messages %}
+            <li class="message {{ message.tags }}" style="">
+            <span class="close-button" onclick="this.parentElement.style.display='none';">&times;</span>
+            {{ message }}
+            </li>
+          {% endfor %}
+           </ul>
+          {% endif %}
             <form method="post" action="{% url 'llogin' %}">
                 {% csrf_token %}
                 <div class="form-group">
