@@ -27,5 +27,5 @@ def llogin(request):
             error_message = "Invalid email or password. Please try again."
             if request.is_ajax():
                 return JsonResponse({'error_message': error_message}, status=400)
-
-    return render(request, 'llogin.html') 
+    else: 
+        return render(request, 'llogin.html') 
