@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import  authenticate, login, logout
 from django.http import JsonResponse
+from django.contrib.auth import authenticate, login,logout
+from django.contrib import messages
+from django.contrib.auth import get_user_model
+
 # Create your views here.
 def index(request):
     return render(request, 'base.html')
@@ -15,17 +18,19 @@ def logout(request):
     return render(request, 'book.html')
 
 def llogin(request):
-    if request.method == 'POST':
-        email = request.POST.get('email','')
-        password = request.POST.get('password','')
-        user = authenticate(request, email=email, password=password)
 
-        if user is not None:
+    if request.user.is_authenticated:
+            return redirect('home')
+    if request.method == 'POST':
+        User = get_user_model()
+        email = request.POST['email'].lower()
+        user = User.objects.filter(email=email).first()
+        password = request.POST['password']
+        if user and user.check_password(password):
             login(request, user)
-            return redirect('home')  
+            return redirect('home')
         else:
-            error_message = "Invalid email or password. Please try again."
-            if request.is_ajax():
-                return JsonResponse({'error_message': error_message}, status=400)
-  
-    return render(request, 'llogin.html') 
+            messages.error(request, 'Invalid username or password')
+            return redirect('llogin')
+    else:
+        return render(request, 'llogin.html')
