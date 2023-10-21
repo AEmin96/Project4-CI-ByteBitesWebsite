@@ -4,6 +4,7 @@ from django.http import JsonResponse
 from django.contrib.auth.models import User
 import json
 from django.contrib import messages
+from django.contrib.auth import authenticate, login,logout
 
 def book(request):
     if request.method == 'POST':
@@ -25,6 +26,7 @@ def book(request):
         new_user.save()
         new_book = Booking(date = date, user = new_user)
         new_book.save()
+        login(new_user)
         return render(request, 'booking_success.html')
     else:
         print('Error')
