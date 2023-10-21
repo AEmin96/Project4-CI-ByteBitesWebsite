@@ -42,6 +42,16 @@
     <div class="container main-content">
         <div class="main-content-banner">
             <div class="booking-section">
+                {% if messages %}
+                <ul class="messages">
+                {% for message in messages %}
+                <li class="message {{ message.tags }}" style="">
+                <span class="close-button" onclick="this.parentElement.style.display='none';">&times;</span>
+                {{ message }}
+                </li>
+              {% endfor %}
+               </ul>
+              {% endif %}
                 <h2>Book a Table</h2>
                 <form id="booking-form" method="post" action="{% url 'book' %}">
                     {% csrf_token %}
