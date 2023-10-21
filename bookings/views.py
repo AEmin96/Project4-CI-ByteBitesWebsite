@@ -26,7 +26,7 @@ def book(request):
         new_user.save()
         new_book = Booking(date = date, user = new_user)
         new_book.save()
-        login(new_user)
+        login(request, new_user)
         return render(request, 'booking_success.html')
     else:
         print('Error')
