@@ -17,7 +17,10 @@ def book(request):
         if overlap:
             messages.error(request, 'Date Already Exists!')
             return redirect('book')
-
+        old_user = User.objects.filter(email=email).first()
+        if old_user :
+            messages.error(request, 'Email Already Exists!')
+            return redirect('book')
         new_user = User.objects.create_user(username=email.split('@')[0], email=email, password=password)
         new_user.save()
         new_book = Booking(date = date, user = new_user)
