@@ -20,4 +20,6 @@ def book(request):
     return render(request, 'book.html')
 
 def mybookings(request):
-    return render(request, 'mybookings.html')
+    mybooks = Booking.objects.filter(user=request.user).all()
+    return render(request, 'mybookings.html', {'mybooks':mybooks})
+
