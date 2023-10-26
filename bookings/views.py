@@ -68,5 +68,3 @@ def update_booking(request, booking_id):
 
     return JsonResponse({'error': 'Invalid request method'}, status=400)
 
-def add_booking(request, booking_id):
-    
