@@ -45,10 +45,10 @@
                 <h1>Your Bookings:</h1>
                 {% for book in mybooks %}
                 <p>
-                    <button class="delete-btn" data-booking-id="{{ book.id }}">Delete</button>
+                    <button class="delete-btn btn btn-danger" data-booking-id="{{ book.id }}">Delete</button>
                     {{ book.user.username }} - {{ book.date }}
                     <input type="date" class="update-date" data-booking-id="{{ book.id }}" value="{{ book.date }}">
-                    <button class="update-btn" data-booking-id="{{ book.id }}">Update</button>
+                    <button class="update-btn btn btn-info" data-booking-id="{{ book.id }}">Update</button>
                 </p>
                 {% endfor %}
             </div>
