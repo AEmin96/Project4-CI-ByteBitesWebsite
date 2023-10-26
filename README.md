@@ -53,8 +53,7 @@
   <li>ElephantSQL</li>
 </ul>
 <h2>6. Testing</h2>
-<h3>6.1 Code Validation</h3>
-<h3> 6.2 Test Cases (User Story Based with Screenshots)</h3>
+<h3> 6 Test Cases (User Story Based with Screenshots)</h3>
 <ul>
   <li> As a user I'd like to be able create an account and make a booking </li>
   
@@ -62,14 +61,24 @@
 
   <li> As a user I'd like to be able to log into my account </li>
   
-  <li> Heroku</li>
+  <li> As a user I'd like to be able to see, update and delete my bookings </li>
   
-  <li>ElephantSQL</li>
+
   
 </ul>
 <h3> 6.3 Fixed Bugs</h3>
-<h3> 6.4 Supported Screens and Browsers</h3>
+  <li> Added validator for the date in My Bookings as users could choose dates in the past </li>
+
+<h3> 6.4 Supported Screens and Browsers</h3> 
+ This website/app works on all sorts of devices -
+![Untitled-1](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8d610cf7-ba23-4b8b-a5ec-094da48e0371)
+
+ 
 <h3>7. Deployment</h3>
-   9.1 
-   9.2 
+  1. Create a new GitHub Repository
+  2. Open the repository on CodeAnywhere
+  3. Write the necessary code 
+  4. Connect ElephantSQL to the project
+  5. Deploy the App to Heroku
 <h3> 8. Credits</h3>
+Code Institute
