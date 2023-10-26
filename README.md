@@ -61,6 +61,8 @@
 
   <li> As a user I'd like to be able to log into my account </li>
   
+  ![image](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/3a852726-3f58-46be-b076-2009c96b9280)
+
   <li> As a user I'd like to be able to see, update and delete my bookings </li>
   
 
