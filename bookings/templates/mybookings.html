@@ -44,13 +44,16 @@
             <div class="booking-section">
                 <h1>Your Bookings:</h1>
                 <button class="update-btn btn btn-primary" > Add Another Booking </button>
+                
                 {% for book in mybooks %}
-                <p>
+                <li>
+                <ol>
                     {{ book.user.username }} - {{ book.date }}
                     <button class="delete-btn btn btn-danger" data-booking-id="{{ book.id }}">Delete</button>                 
                     <button class="update-btn btn btn-info" data-booking-id="{{ book.id }}">Update</button>
                     <input type="date" class="update-date" data-booking-id="{{ book.id }}" value="{{ book.date }}">
-                </p>
+                </ol>
+                </li>
                 {% endfor %}
             </div>
         </div>
