@@ -27,6 +27,9 @@
 <em> As a Restaurant Staff Member (Admin): </em>
 <ul>
 <li>As a staff member, I want to access the admin panel to manage bookings and reservations.</li>
+
+  ![image](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/54ac56c4-b8ce-495f-a1e7-4110565102bb)
+
 </ul>
 <h2>3. Features</h2>
 <ul>
