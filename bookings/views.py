@@ -16,7 +16,7 @@ def book(request):
 
         overlap = overlapping_bookings.exists()
         if overlap:
-            messages.error(request, 'Date Already Exists!')
+            messages.error(request, 'This Date Is Already Booked, Please Choose Another Day!')
             return redirect('book')
         old_user = User.objects.filter(email=email).first()
         if old_user :
