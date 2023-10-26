@@ -71,6 +71,7 @@
 
 <h3> 6.4 Supported Screens and Browsers</h3> 
  This website/app works on all sorts of devices -
+ 
 ![Untitled-1](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8d610cf7-ba23-4b8b-a5ec-094da48e0371)
 
  
