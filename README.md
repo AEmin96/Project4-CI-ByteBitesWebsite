@@ -76,10 +76,10 @@
 
  
 <h3>7. Deployment</h3>
-  1. Create a new GitHub Repository
-  2. Open the repository on CodeAnywhere
-  3. Write the necessary code 
-  4. Connect ElephantSQL to the project
-  5. Deploy the App to Heroku
+  1. Create a new GitHub Repository <br>
+  2. Open the repository on CodeAnywhere <br>
+  3. Write the necessary code <br>
+  4. Connect ElephantSQL to the project <br>
+  5. Deploy the App to Heroku <br>
 <h3> 8. Credits</h3>
 Code Institute
