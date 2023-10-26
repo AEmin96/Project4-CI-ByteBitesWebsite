@@ -46,9 +46,27 @@
   
  </ul>
 <h2>5. Technology</h2>
+<ul>
+  <li> GitHub</li>
+  <li> CodeAnywhere</li>
+  <li> Heroku</li>
+  <li>ElephantSQL</li>
+</ul>
 <h2>6. Testing</h2>
 <h3>6.1 Code Validation</h3>
 <h3> 6.2 Test Cases (User Story Based with Screenshots)</h3>
+<ul>
+  <li> As a user I'd like to be able create an account and make a booking </li>
+  
+  ![image](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/9766834d-75fc-4ee5-872c-91d71b271e6e)
+
+  <li> As a user I'd like to be able to log into my account </li>
+  
+  <li> Heroku</li>
+  
+  <li>ElephantSQL</li>
+  
+</ul>
 <h3> 6.3 Fixed Bugs</h3>
 <h3> 6.4 Supported Screens and Browsers</h3>
 <h3>7. Deployment</h3>
