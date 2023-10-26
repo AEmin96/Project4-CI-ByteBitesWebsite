@@ -1,8 +1,9 @@
 <h1>Project Name: ByteBites Restaurant</h1>
-<h2> Flowchart for the project </h2>
+<h2> Entity & Relationship Diagram for the project </h2>
 
-![Flowchart](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/3879ef1a-a6dc-4845-b956-12fc484d303c)
 
+
+![Blank diagram](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/80ad62d9-c3da-46bf-b2fb-49f45d301807)
 
 
 <h2>1. Purpose of the Project</h2>
