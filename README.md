@@ -65,6 +65,7 @@
 
   <li> As a user I'd like to be able to see, update and delete my bookings </li>
   
+![image](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/a1d5fd8b-a6fb-46d4-83e1-fb3890828e7b)
 
   
 </ul>
