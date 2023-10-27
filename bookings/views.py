@@ -77,7 +77,7 @@ def newbook(request):
         overlap = overlapping_bookings.exists()
         if overlap:
             messages.error(request, 'This Date Is Already Booked, Please Choose Another Day!')
-            return redirect('book')
+            return redirect('mybookings')
         
         new_book = Booking(date = date, user=request.user)
         new_book.save()
