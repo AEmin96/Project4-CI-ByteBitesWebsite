@@ -69,7 +69,7 @@
                     {{ book.user.username }} - {{ book.date }}
                     <button class="delete-btn btn btn-danger" data-booking-id="{{ book.id }}">Delete</button>                 
                     <button class="update-btn btn btn-info" data-booking-id="{{ book.id }}">Update</button>
-                    <input type="date" id="date{{book.id}}" class="update-date" data-booking-id="{{ book.id }}" value="{{ book.date }}">
+                    <input type="date" id="date{{book.id}}"  min="2023-10-17" class="update-date" data-booking-id="{{ book.id }}" value="{{ book.date }}">
                 </ol>
                
                 {% endfor %}
