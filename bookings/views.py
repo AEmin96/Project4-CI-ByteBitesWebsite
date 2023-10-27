@@ -68,3 +68,22 @@ def update_booking(request, booking_id):
 
     return JsonResponse({'error': 'Invalid request method'}, status=400)
 
+def newbook(request):
+    if request.method == 'POST':
+        date = request.POST.get('date') 
+        
+        overlapping_bookings = Booking.objects.filter(date=date)
+
+        overlap = overlapping_bookings.exists()
+        if overlap:
+            messages.error(request, 'This Date Is Already Booked, Please Choose Another Day!')
+            return redirect('book')
+        
+        new_book = Booking(date = date, user=request.user)
+        new_book.save()
+        
+        return redirect("mybookings")
+    else:
+        print('Error')
+
+    return redirect("mybookings")
