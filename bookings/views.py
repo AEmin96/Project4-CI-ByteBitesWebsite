@@ -56,6 +56,11 @@ def update_booking(request, booking_id):
             data = json.loads(request.body.decode('utf-8'))
             new_date = data.get('date')
             
+            overlapping_bookings = Booking.objects.filter(date=new_date)
+            overlap = overlapping_bookings.exists()
+            if overlap:
+                messages.error(request, 'This Date Is Already Booked, Please Choose Another Day!')
+                return redirect('mybookings')
             # Ensure that a new date is provided
             if new_date is not None:
                 booking.date = new_date
