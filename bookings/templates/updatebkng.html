@@ -61,7 +61,7 @@
                     <input type="date" name="date" id="date{{book.id}}"  min="2023-10-17" class="update-date" data-booking-id="{{ book.id }}" value="{{ book.date }}">
                     </div>
                 <button class="update-btn btn btn-info" type="submit" data-booking-id="{{ book.id }}" > Update </button>
-                <button class="btn btn-danger"> <a  href="{% url 'mybookings' %}"> Cancel </a> </button>
+                 <a href="{% url 'mybookings' %}"> <button class="btn btn-danger"> Cancel </button> </a>
                </form>
             </div>
         </div>

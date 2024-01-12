@@ -56,7 +56,7 @@
                 
                 <form id="booking-form" method="post" action="{% url 'newbook' %}">
                     {% csrf_token %}
-                <button  class="btn btn-primary"> <a href="{% url 'addbk' %}">Add Another Booking </a></button> 
+                 <a href="{% url 'addbk' %}"> <button  class="btn btn-primary"> Add Another Booking </button> </a>
                </form>
                 <li>
                 {% for book in mybooks %}
@@ -64,7 +64,7 @@
                 <ol>
                     {{ book.user.username }} - {{ book.date }}
                     <button class="delete-btn btn btn-danger" data-booking-id="{{ book.id }}">Delete</button>                 
-                    <button class="btn btn-info"> <a href="{% url 'updatebkng' book.id  %}"> Update </a> </button> 
+                    <a href="{% url 'updatebkng' book.id  %}" > <button class="btn btn-info"> Update </button> </a>
                 </ol>
                
                 {% endfor %}
