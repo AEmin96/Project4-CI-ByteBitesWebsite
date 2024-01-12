@@ -52,23 +52,17 @@
                </ul>
               {% endif %}
             <div class="booking-section">
-                <h1>Your Bookings:</h1>
+                <h1>Add Booking:</h1>
                 
-                <form id="booking-form" method="post" action="{% url 'newbook' %}">
+                <form id="booking-form" method="post">
                     {% csrf_token %}
-                <button  class="btn btn-primary"> <a href="{% url 'addbk' %}">Add Another Booking </a></button> 
+                    <div class="form-group">
+                        <label for="date">Select a Date:</label> <br>
+                        <input type="date" id="date" name="date" min="2023-10-17" required>
+                    </div>
+                <button class="update-btn btn btn-info" > Submit </button> 
+                <button class="btn btn-danger"> <a href="{% url 'mybookings' %}"> Cancel </a> </button>
                </form>
-                <li>
-                {% for book in mybooks %}
-                
-                <ol>
-                    {{ book.user.username }} - {{ book.date }}
-                    <button class="delete-btn btn btn-danger" data-booking-id="{{ book.id }}">Delete</button>                 
-                    <button class="btn btn-info"> <a href="{% url 'updatebkng' book.id  %}"> Update </a> </button> 
-                </ol>
-               
-                {% endfor %}
-                 </li>
             </div>
         </div>
         </div>
