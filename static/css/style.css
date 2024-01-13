@@ -138,6 +138,10 @@ background-color: rgba(217, 83, 79, 0.897);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.cancelbtn{
+    text-shadow: none;
+}
+
 .menutable th,
 .menutable td {
     padding: 10px;
