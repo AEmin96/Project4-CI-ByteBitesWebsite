@@ -7,7 +7,7 @@ body {
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif !important;
     color: #fff;
 }
 
@@ -46,14 +46,14 @@ body {
 }
 
 .navbar-brand.restaurant-name {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', sans-serif !important;
     font-size: 36px;
     font-weight: bold;
     color: #d9534f;
 }
 
 .main-content {
-    font-family: 'Segue', cursive;
+    font-family: 'Arial', sans-serif;
     font-size: 36px;
     font-weight: bold;
     color: #ffffff;
@@ -77,7 +77,7 @@ body {
 form {
     max-width: 300px;
     margin: 0 auto; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 
 .form-group {
@@ -108,7 +108,7 @@ form {
 
 
 .mt-3 a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Arial', Verdana, sans-serif !important;
     text-decoration: none;
     color: #d9534f; 
     font-weight: bold;
@@ -136,6 +136,10 @@ background-color: rgba(217, 83, 79, 0.897);
     width: 80%; 
     margin: 20px auto;     
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cancelbtn{
+    text-shadow: none;
 }
 
 .menutable th,
@@ -173,3 +177,47 @@ background-color: rgba(217, 83, 79, 0.897);
 #booking-form {
     font-size: large;  
    }
+
+/* Style for messages container */
+.messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+  
+  /* Style for individual messages */
+  .messages li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Success message style */
+  .messages .success {
+    background-color: #e4f4cb;
+    color: #71a03f;
+
+  }
+  
+  /* Error message style */
+  .messages .error {
+    background-color: #FF5722;
+    color: #fff;
+  }
+  
+  /* Info message style */
+  .messages .info {
+    background-color: #2196F3;
+    color: #fff;
+  }
+  
+  /* Warning message style */
+  .messages .warning {
+    background-color: #FFC107;
+    color: #333;
+  }
+  
