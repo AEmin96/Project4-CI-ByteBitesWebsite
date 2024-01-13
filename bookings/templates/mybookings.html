@@ -53,11 +53,7 @@
               {% endif %}
             <div class="booking-section">
                 <h1>Your Bookings:</h1>
-                
-                <form id="booking-form" method="post" action="{% url 'newbook' %}">
-                    {% csrf_token %}
                  <a href="{% url 'addbk' %}"> <button  class="btn btn-primary"> Add Another Booking </button> </a>
-               </form>
                 <li>
                 {% for book in mybooks %}
                 
