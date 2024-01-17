@@ -136,7 +136,7 @@
   <li> There was a line in base.html that was missing a closing tag. This was fixed after the validator check </li>
  
 <h3>7. Deployment </h3>
-<h4> This project was deployed to Heroku using these steps: </h4> <br>
+<h4> This project was deployed to Heroku using these steps: </h4>
 1. Fork or clone this repository  <br>
 2. Create a new Heroku app  <br>
 3. Set the buildpacks to Python  <br>
