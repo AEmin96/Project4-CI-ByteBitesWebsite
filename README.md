@@ -106,8 +106,18 @@
   <li> Heroku</li>
   <li>ElephantSQL</li>
 </ul>
-<h2>6. Testing</h2>
-<h3> 6 Test Cases (User Story Based with Screenshots)</h3>
+<h2>6 Testing</h2>
+
+<h3> 6.1 Manual Testing </h3>
+
+| Test                | Expected Result              | Actual Result                | Resolved by          |
+|---------------------|------------------------------|------------------------------|----------------------|
+| [Booking the same date twice or more]         | [Throw an error for booking already exists] | [Users could book the same date over and over again]  | [Added overlerlapping booking validation in the function in Booking app. This Date alreadt exists message was introduced]    |
+| [Booking a date in the past]      | [Show only the date from the current date onwards] | [Users could book dates in the past]  | [Added JS script to get the current day data and to show date from the current date onwards]    |
+| [User to be able to update booking dates]  | [Update the date and redirect back to My Bookings] | [Date would get updated but it wouldn't redirect back to My Bookings]  | [Return redirect had a wrong argument. Once fixed, it worked perfectly ]    |
+
+
+<h3> 6.2 Test Cases (User Story Based with Screenshots)</h3>
 <ul>
   <li> As a user I'd like to be able create an account and make a booking </li>
   
@@ -122,7 +132,7 @@
   <img width="1159" alt="Screenshot 2024-01-17 at 22 19 38" src="https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/0c97790e-05e7-44a6-8036-5660fd292d2f">
 
 
-<h2> 6.2 Validator Testing </h2>
+<h2> 6.3 Validator Testing </h2>
 <h3> HTML Validator </h3>
 <img width="1952" alt="Screenshot 2024-01-17 at 22 15 03" src="https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/249923e3-5e53-42fa-864a-a23baface263">
 <h3> CSS Validator </h3>
@@ -131,7 +141,7 @@
 
   
 </ul>
-<h3> 6.3 Fixed Bugs</h3>
+<h3> 6.4 Fixed Bugs</h3>
   <li> Added validator for the date in My Bookings as users could choose dates in the past </li>
   <li> There was a line in base.html that was missing a closing tag. This was fixed after the validator check </li>
  
