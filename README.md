@@ -64,11 +64,21 @@
 <h2>3. Features</h2>
 <ul>
   <li>User-friendly navigation menu</li>
+  
+  ![Screenshot 2024-01-17 at 21 41 46](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/41eb70b5-672d-4102-bca1-936450239ed6)
+
   <li>Responsive design for mobile and desktop</li>
+
+  ![Untitled-1](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8d610cf7-ba23-4b8b-a5ec-094da48e0371)
+  
   <li>User registration and login</li>
+  
   <li>View and manage bookings</li>
+  
   <li>Booking confirmation and cancellation</li>
+  
   <li>Integration of restaurant menu</li>
+  
 </ul>
 <h2>4. Future Features</h2>
 <ul>
