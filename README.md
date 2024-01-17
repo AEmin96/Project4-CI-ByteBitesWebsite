@@ -114,7 +114,7 @@
 |---------------------|------------------------------|------------------------------|----------------------|
 | Booking the same date twice or more         | Throw an error for booking already exists | Users could book the same date over and over again  | Added overlerlapping booking validation in the function in Booking app. This Date already exists message was introduced    |
 | Booking a date in the past      | Show only the date from the current date onwards | Users could book dates in the past  | Added JS script to get the current day data and to show date from the current date onwards    |
-| User to be able to update booking dates]  | Update the date and redirect back to My Bookings | Date would get updated but it wouldn't redirect back to My Bookings  | Return redirect had a wrong argument. Once fixed, it worked perfectly     |
+| User to be able to update booking dates  | Update the date and redirect back to My Bookings | Date would get updated but it wouldn't redirect back to My Bookings  | Return redirect had a wrong argument. Once fixed, it worked perfectly     |
 
 
 <h3> 6.2 Test Cases (User Story Based with Screenshots)</h3>
