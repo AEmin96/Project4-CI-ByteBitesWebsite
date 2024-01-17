@@ -32,6 +32,11 @@
 
 ![PhoneMyBookings](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/a88f40cb-6339-4d92-8b8a-5fa903e6697c)
 
+<h1> Entity & Relationship Diagram </h1>
+
+![ERDIAGRAM drawio](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/15e64b4a-c75d-4aee-8be5-13887d8ad823)
+
+
 
 <h2>2. User Stories</h2>
 
