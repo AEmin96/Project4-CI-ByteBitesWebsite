@@ -2,6 +2,35 @@
 
 <h2>1. Purpose of the Project</h2>
 <p>The purpose of this project is to create an efficient and user-friendly restaurant website that enhances the dining experience for customers. It aims to provide a platform for users to easily make reservations, explore the menu, and order online while allowing restaurant staff to efficiently manage bookings and menu items. Ultimately, the project seeks to streamline restaurant operations and improve customer engagement.</p>
+
+
+<h1> Wireframes </h1>
+
+<h3> PC View Not Logged in </h3>
+
+![NotLoggedPC](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/4dddb484-e024-41f0-b945-2d02d76b6b55)
+
+<h3> Phone View Not Logged in </h3>
+
+![NotLoggedPhone](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/eb1bdab9-c6a6-463d-ae77-bd0a8bd67ee5)
+
+<h3> PC View Logged in </h3>
+
+![LoggedPC drawio](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/6c85fa6c-06ee-4825-996a-b446f1387dd3)
+
+<h3> Phone View Logged in </h3>
+
+![LoggedPhoneHome](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/d59c620b-163b-4030-aaf5-06f5ed68844b)
+
+<h3> My Bookings PC View </h3>
+
+![MYBOOKINGSPC (1)](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/7cbea5ee-fca0-4d8f-8c7d-840369933f7d)
+
+<h3> My Bookings Phone View </h3>
+
+![PhoneMyBookings](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/a88f40cb-6339-4d92-8b8a-5fa903e6697c)
+
+
 <h2>2. User Stories</h2>
 
   
