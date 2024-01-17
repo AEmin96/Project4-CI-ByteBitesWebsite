@@ -134,12 +134,6 @@
 <h3> 6.3 Fixed Bugs</h3>
   <li> Added validator for the date in My Bookings as users could choose dates in the past </li>
   <li> There was a line in base.html that was missing a closing tag. This was fixed after the validator check </li>
-
-<h3> 6.4 Supported Screens and Browsers</h3> 
- This website/app works on all sorts of devices -
- 
-
-
  
 <h3>7. Deployment </h3>
 <h4> This project was deployed to Heroku using these steps: </h4> <br>
