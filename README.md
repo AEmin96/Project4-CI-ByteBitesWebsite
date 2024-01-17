@@ -1,6 +1,6 @@
 <h1>ByteBites Restaurant</h1>
 
-![Untitled-1](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8d610cf7-ba23-4b8b-a5ec-094da48e0371)
+
 
 <h2>1. Purpose of the Project</h2>
 <p>The purpose of this project is to create an efficient and user-friendly restaurant website that enhances the dining experience for customers. It aims to provide a platform for users to easily make reservations, explore the menu, and order online while allowing restaurant staff to efficiently manage bookings and menu items. Ultimately, the project seeks to streamline restaurant operations and improve customer engagement.</p>
@@ -64,20 +64,31 @@
 <h2>3. Features</h2>
 <ul>
   <li>User-friendly navigation menu</li>
-  
-  ![Screenshot 2024-01-17 at 21 41 46](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/41eb70b5-672d-4102-bca1-936450239ed6)
+
+  ![Screenshot 2024-01-17 at 21 41 46](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/0d97704e-f801-4508-96a3-446edfd084fb)
 
   <li>Responsive design for mobile and desktop</li>
 
-  ![Untitled-1](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8d610cf7-ba23-4b8b-a5ec-094da48e0371)
+![Untitled-1](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8d610cf7-ba23-4b8b-a5ec-094da48e0371)
   
   <li>User registration and login</li>
+
+![Screenshot 2024-01-17 at 21 43 56](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/847506a5-6fe8-4f6d-9538-707284edea00)
+
   
   <li>View and manage bookings</li>
+
+![Screenshot 2024-01-17 at 21 44 52](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/1c838522-f981-4b67-91bf-d8d2da7e186f)
+
   
   <li>Booking confirmation and cancellation</li>
-  
+
+  ![Screenshot 2024-01-17 at 21 44 38](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/6b47d49e-5b57-465f-8dc9-268f74b426dd)
+
   <li>Integration of restaurant menu</li>
+  
+![Screenshot 2024-01-17 at 21 45 13](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8c2edd7f-cd22-40d5-9fa1-1cd1132ab7ef)
+
   
 </ul>
 <h2>4. Future Features</h2>
