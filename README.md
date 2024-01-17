@@ -118,8 +118,9 @@
   ![image](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/3a852726-3f58-46be-b076-2009c96b9280)
 
   <li> As a user I'd like to be able to see, update and delete my bookings </li>
-  
-![image](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/a1d5fd8b-a6fb-46d4-83e1-fb3890828e7b)
+
+  <img width="1159" alt="Screenshot 2024-01-17 at 22 19 38" src="https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/0c97790e-05e7-44a6-8036-5660fd292d2f">
+
 
 <h2> 6.2 Validator Testing </h2>
 <h3> HTML Validator </h3>
@@ -132,6 +133,7 @@
 </ul>
 <h3> 6.3 Fixed Bugs</h3>
   <li> Added validator for the date in My Bookings as users could choose dates in the past </li>
+  <li> There was a line in base.html that was missing a closing tag. This was fixed after the validator check </li>
 
 <h3> 6.4 Supported Screens and Browsers</h3> 
  This website/app works on all sorts of devices -
@@ -139,19 +141,14 @@
 
 
  
-<h3>7. Deployment</h3>
-  1. Create a new GitHub Repository <br>
-  2. Open the repository on CodeAnywhere <br>
-  3. Write the necessary code <br>
-  4. Connect ElephantSQL to the project <br>
-  5. Deploy the App to Heroku <br>
+<h3>7. Deployment </h3>
+<h4> This project was deployed to Heroku using these steps: </h4>
+1. Fork or clone this repository
+2. Create a new Heroku app
+3. Set the buildpacks to Python
+4. Set the config vars for your database connection and API keys
+4. Link the Heroku app to the repository
+5. Click on deploy
+
 <h3> 8. Credits</h3>
 Code Institute
-
-
-
-<h2> Entity & Relationship Diagram for the project </h2>
-
-
-
-![Blank diagram](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/80ad62d9-c3da-46bf-b2fb-49f45d301807)
