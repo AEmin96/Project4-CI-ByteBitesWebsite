@@ -142,13 +142,13 @@
 
  
 <h3>7. Deployment </h3>
-<h4> This project was deployed to Heroku using these steps: </h4>
-1. Fork or clone this repository
-2. Create a new Heroku app
-3. Set the buildpacks to Python
-4. Set the config vars for your database connection and API keys
-4. Link the Heroku app to the repository
-5. Click on deploy
+<h4> This project was deployed to Heroku using these steps: </h4> <br>
+1. Fork or clone this repository  <br>
+2. Create a new Heroku app  <br>
+3. Set the buildpacks to Python  <br>
+4. Set the config vars for your database connection and API keys  <br>
+4. Link the Heroku app to the repository  <br>
+5. Click on deploy  <br>
 
 <h3> 8. Credits</h3>
 Code Institute
