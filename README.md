@@ -1,5 +1,5 @@
 <h1>ByteBites Restaurant</h1>
-
+<h2> Deployed Project : https://bytebites-c7354208ea8f.herokuapp.com/ </h2>
 
 
 <h2>1. Purpose of the Project</h2>
