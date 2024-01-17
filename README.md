@@ -121,9 +121,12 @@
   
 ![image](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/a1d5fd8b-a6fb-46d4-83e1-fb3890828e7b)
 
-<h3> 6.2 Validator Testing </h3>
-
+<h2> 6.2 Validator Testing </h2>
+<h3> HTML Validator </h3>
 <img width="1952" alt="Screenshot 2024-01-17 at 22 15 03" src="https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/249923e3-5e53-42fa-864a-a23baface263">
+<h3> CSS Validator </h3>
+
+<img width="1987" alt="image" src="https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/4dae6325-97a2-43a5-8fdd-545189317235">
 
   
 </ul>
