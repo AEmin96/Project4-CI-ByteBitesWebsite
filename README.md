@@ -1,5 +1,7 @@
 <h1>ByteBites Restaurant</h1>
 
+![Untitled-1](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8d610cf7-ba23-4b8b-a5ec-094da48e0371)
+
 <h2>1. Purpose of the Project</h2>
 <p>The purpose of this project is to create an efficient and user-friendly restaurant website that enhances the dining experience for customers. It aims to provide a platform for users to easily make reservations, explore the menu, and order online while allowing restaurant staff to efficiently manage bookings and menu items. Ultimately, the project seeks to streamline restaurant operations and improve customer engagement.</p>
 
@@ -101,7 +103,7 @@
 <h3> 6.4 Supported Screens and Browsers</h3> 
  This website/app works on all sorts of devices -
  
-![Untitled-1](https://github.com/AEmin96/Project4-CI-ByteBitesWebsite/assets/126208272/8d610cf7-ba23-4b8b-a5ec-094da48e0371)
+
 
  
 <h3>7. Deployment</h3>
